@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php include("includes/header.php"); ?>
-    <h1>Bienvenue sur notre mini-site</h1>
+    <h1>Bienvenue sur notre site</h1>
     <?php if (isset($_SESSION['user'])): ?>
         <p>Vous êtes connecté en tant que <?php echo $_SESSION['user']; ?>.</p>
         <a href="logout.php">Déconnexion</a>

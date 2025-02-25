@@ -2,7 +2,7 @@
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
-    $password = md5($_POST['password']); // Simple hash pour ce projet (à améliorer avec password_hash())
+    $password = md5($_POST['password']); 
 
     $stmt = $pdo->prepare("SELECT * FROM users WHERE username = ? AND password = ?");
     $stmt->execute([$username, $password]);

@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-$host = "localhost";
-$dbname = "mini_site";
-$username = "root";  // Mettez votre utilisateur MySQL
-$password = "";      // Mettez votre mot de passe MySQL
+$host = "";
+$dbname = "";
+$username = "";  
+$password = "";      
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
